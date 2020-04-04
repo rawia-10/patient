@@ -50,7 +50,7 @@ class Navbar extends Component {
                       <div className="col-xl-3 col-lg-3">
                         <div className="logo">
                           <a href="index.html">
-                            <img src="img/logo.png" alt="" />
+                           <Link className='active' exact to='/'> <img src="img/logo.png" alt="" /></Link>
                           </a>
                         </div>
                       </div>
@@ -67,13 +67,13 @@ class Navbar extends Component {
                           
                           <div className="Appointment">
                             <div className="book_btn d-none d-lg-block">
-                              <a data-scroll-nav={1} href="#">vous êtes  praticien</a>
+                              <a data-scroll-nav={1} ><Link to='/praticien'>Praticien</Link></a>
                             </div>
                           </div>
 
                           <div className="Appointment">
                             <div className="book_btn d-none d-lg-block">
-                              <a data-scroll-nav={1} href="#">vous êtes patient</a>
+                              <a data-scroll-nav={1} ><Link to='/patient'>Patient</Link></a>
                             </div>
                           </div>
                         </div>
